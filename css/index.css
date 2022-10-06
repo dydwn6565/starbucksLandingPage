@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+}
+
+.header {
+    background-color: #f6f5f0;
+}
+
+.header-container {
+    width: 1000px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    margin-top: 20px;
+}
+
+.header-top-nav {
+    display: flex;
+    /* margin-right: 10px; */
+    font-size: 13px;
+    color: #656565;
+    width: 600px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.header-top-nav-divider {
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e5;
+    background-color: black;
+    margin: auto;
+}
+
+.search-icon {
+    margin-left: 20px;
+    background-color: white;
+}
+
+.header-bottom-nav {
+    width: 800px;
+    height: 30px;
+    float: right;
+}
+
+.header-bottom-nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+
+/*  coffee image */
+
+.coffee-image {
+    background-image: url("https://keen-leakey-d05b43.netlify.app/images/visual_bg.jpg");
+    background-color: bl;
+    height: 648px;
+    background-position: center
+}
+
+.delightful-image {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+.deflightful-detail-button {
+    color: #592b18;
+    border-color: #592b18;
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+    margin-top: 350px;
+    margin-left: 280px;
+    position: absolute;
+}
+
+.visual-spoon-image {
+    margin-top: 420px;
+    margin-left: 420px;
+    position: absolute;
+}
+
+.carabel-crumble-image {
+    margin-top: 120px;
+    margin-left: 820px;
+    position: absolute;
+    z-index:1;
+}
+
+.oatmeal-latte-image {
+    margin-top: 80px;
+    margin-left: 1020px;
+    position: absolute;
+}
