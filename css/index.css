@@ -1256,7 +1256,6 @@
     margin-left: 100px;
     position: absolute;
     color: #333;
-    
 }
 
 .store-info-button:hover {
@@ -1264,7 +1263,7 @@
     padding: 10px;
     border: 2px solid #333;
     background-color: #333;
-    color:white;
+    color: white;
     border-radius: 4px;
     font-size: 16px;
     font-weight: 700;
@@ -1276,8 +1275,6 @@
     margin-top: -80px;
     margin-left: 100px;
     position: absolute;
-    
-    
 }
 
 
@@ -1304,6 +1301,25 @@
     top: 0;
     margin-top: -50px;
     z-index: 1;
+    animation-name: findStoreFirst;
+    animation-duration: 2s;
+}
+
+.findStoreFirst {
+    animation-name: findStoreFirst;
+}
+
+@keyframes findStoreFirst {
+    0% {
+        margin-left: -200px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        margin-right: 0;
+    }
 }
 
 .find-store-second-image>img {
@@ -1312,6 +1328,8 @@
     margin-left: 200px;
     margin-top: 150px;
     z-index: 2;
+    animation-name: findStoreFirst;
+    animation-duration: 2s;
 }
 
 .find-store-third-image>img {
@@ -1326,7 +1344,7 @@
 }
 
 .find-store-description {
-    width: 500px;
+    width: 700px;
     height: 200px;
     border: 1px solid black;
     margin-left: 450px;
@@ -1349,20 +1367,63 @@
     transition: .4s;
     margin-top: 20px;
     background-color: transparent;
-    float: left;
-    ;
+    
+}
+
+.find-store-button:hover {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+    margin-top: 20px;
+    background-color: #333;
+  
 }
 
 .find-store-description-first {
     font-weight: bold;
     font-size: 20px;
-    ;
+    animation-name: findStoreText;
+    animation-duration: 2s;
 }
 
 .find-store-description-second {
     font-size: 17px;
     margin-bottom: 10px;
     font-weight: bold;
+    animation-name: findStoreText;
+    animation-duration: 2s;
+}
+
+.findStoreText {
+    animation-name: findStoreText;
+}
+
+.find-store-description-second-container,
+.find-store-button {
+    animation-name: findStoreText;
+    animation-duration: 2s;
+}
+
+@keyframes findStoreText {
+    0% {
+        margin-left: 200px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0;
+    }
 }
 
 
@@ -1420,18 +1481,16 @@
 }
 
 
-/* .terms-buttons-container {
-    position: absolute;
-    margin:0 auto;
-} */
 
 .terms-buttons {
     display: flex;
     justify-content: center;
+    
 }
 
 .terms-button {
     width: 130px;
+    
     padding: 10px;
     border: 2px solid white;
     color: white;

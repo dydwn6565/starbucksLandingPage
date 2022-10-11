@@ -96,16 +96,20 @@ function showSlides(n) {
 
 
 let awardslideIndex = 1;
+let counter =1;
 awardShowSlides(awardslideIndex);
 
-function awardShowSlides(n) {
+function awardShowSlides() {
   
+  console.log(awardslideIndex)
   let i;
   let slides = document.getElementsByClassName("awardSlides");
-    if (n > slides.length) {
-      slideIndex = 1;
+  console.log(slides.length);
+    if (awardslideIndex+5 > slides.length) {
+      awardslideIndex = 1;
+      
     }
-    if (n < 1) {
+    if (counter < 1) {
       awardslideIndex = slides.length;
     }
   for (i = 0; i < slides.length; i++) {
@@ -120,10 +124,8 @@ function awardShowSlides(n) {
   slides[awardslideIndex + 1].style.display = "block";
   slides[awardslideIndex + 2].style.display = "block";
   slides[awardslideIndex + 3].style.display = "block";
-  slides[awardslideIndex + 4].style.display = "block";
+  // slides[awardslideIndex + 4].style.display = "block";
   
   
   setTimeout(awardShowSlides, 2000); // Change image every 2 seconds
 }
-
-
