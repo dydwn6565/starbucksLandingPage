@@ -2,9 +2,7 @@
     margin: 0;
 }
 
-.header {
-    background-color: #f6f5f0;
-}
+.header {}
 
 .header-container>img {
     width: 65px;
@@ -16,6 +14,7 @@
 .header-container {
     width: 1000px;
     height: 100px;
+    background-color: #f6f5f0;
     /* border: 1px solid black; */
     margin-left: auto;
     margin-right: auto;
@@ -429,9 +428,7 @@
 
 /* image slide */
 
-.slideshow-section {
-    background-color: #f6f5f0;
-}
+.slideshow-section {}
 
 .dot-components {
     margin-top: 100px;
@@ -447,8 +444,6 @@
 }
 
 .slide-detail-button {
-    color: #592b18;
-    border-color: #592b18;
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -461,7 +456,12 @@
     box-sizing: border-box;
     display: block;
     transition: .4s;
-    margin-left: 280px;
+    margin-left: 41%
+}
+
+.slide-detail-button:hover {
+    color: white;
+    background-color: #333;
 }
 
 .prev {
@@ -477,6 +477,16 @@
 .slideshow-container {
     display: flex;
     width: 100%;
+    background-color: #f6f5f0;
+}
+
+.mySlides {
+    display: flex;
+    justify-content: center;
+}
+
+.mySlides>img {
+    max-width: 100%;
 }
 
 .dot {
@@ -496,42 +506,7 @@
 }
 
 
-/* Fading animation */
-
-
-/* .fade {
-    animation-name: fade;
-    animation-duration: 0.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-} */
-
-
-/* On smaller screens, decrease text size */
-
-
-/* @media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-} */
-
-
 /* reward image */
-
-.reward-image {
-    /* width: 100vw;
-    border: 1px solid blue */
-}
 
 .reward-image>img {
     display: block;
@@ -539,29 +514,26 @@
 }
 
 .reward-image-left {
-    width: 50vw;
+    width: 50%;
     background-color: #272727;
 }
 
 .reward-image-right {
-    width: 50vw;
+    width: 50%;
     float: right;
     background-color: #d5c798;
 }
 
 .reward-image-container {
     display: flex;
-    z-index: 5;
+    /* z-index: 5; */
 }
 
 .reward-login-button {
-    color: #592b18;
-    border-color: #592b18;
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
     border-radius: 4px;
-    /* color: #333; */
     color: white;
     background-color: #333;
     font-size: 16px;
@@ -573,9 +545,12 @@
     transition: .4s;
 }
 
+.reward-login-button:hover {
+    color: #333;
+    background-color: transparent;
+}
+
 .reward-signin-button {
-    color: #592b18;
-    border-color: #592b18;
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -591,9 +566,12 @@
     background-color: #d5c798;
 }
 
+.reward-signin-button:hover {
+    background-color: #333;
+    color: white;
+}
+
 .reward-e-gift {
-    color: #592b18;
-    border-color: #592b18;
     width: 280px;
     padding: 10px;
     border: 2px solid #333;
@@ -607,7 +585,11 @@
     display: block;
     transition: .4s;
     background-color: #d5c798;
-    /* float: left; */
+}
+
+.reward-e-gift:hover {
+    background-color: #333;
+    color: white;
 }
 
 .reward-signin-button {
@@ -620,7 +602,6 @@
 
 .regular-button {
     display: flex;
-    /* margin:auto; */
     padding: 10px;
 }
 
@@ -640,7 +621,7 @@
 }
 
 .youtube-video-container {
-    margin-top: -120px;
+    margin-top: -150px;
     left: 0;
 }
 
@@ -652,7 +633,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* object-fit: cover; */
 }
 
 .floating-image-first {
@@ -707,29 +687,73 @@
 /* ice coffee blend */
 
 .ice-coffee-blend {
-    position: relative;
     background-image: url("../images/season_product_bg.jpg");
     width: 100%;
-    height: 400px;
-    margin-top: -70px;
+    height: 420px;
+    margin-top: -130px;
 }
 
-.season-product>img {
-    margin-left: 400px;
-    z-index: 5
+.ice-coffee-blend-container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.season-product {
+    z-index: 5;
+    animation-duration: 2.5s;
+    animation-name: iceCoffeeBlend;
+}
+
+.iceCoffeeBlend {
+    animation-name: iceCoffeeBlend;
+}
+
+@keyframes iceCoffeeBlend {
+    0% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
 }
 
 .season-product-description-top {
     width: 500px;
+    animation-duration: 2.5s;
     border: 1px solid black;
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 100px;
     padding: 5px;
-    margin-right: 500px;
     font-family: sans-serif;
-    ;
+    animation-name: descriptionTop;
+}
+
+.descriptionTop {
+    animation-name: descriptionTop;
+}
+
+@keyframes descriptionTop {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-right: -200px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
 }
 
 .season-product-description-top-first {
@@ -750,14 +774,33 @@
     right: 0;
     padding: 5px;
     margin-top: 180px;
-    margin-right: 500px;
     color: #592b18;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    animation-name: descriptionBottom;
+    animation-duration: 3s;
+}
+
+.descriptionBottom {
+    animation-name: descriptionBottom;
+}
+
+@keyframes descriptionBottom {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-right: -200px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
 }
 
 .season-product-description-button {
-    /* color: #592b18;
-    border-color: #592b18; */
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -770,13 +813,55 @@
     box-sizing: border-box;
     display: block;
     transition: .4s;
-    /* background-color: #d5c798; */
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 280px;
-    margin-right: 880px;
+    margin-right: 380px;
     background-color: transparent;
+    animation-duration: 3.5s;
+    animation-name: descriptionButon;
+}
+
+.season-product-description-button:hover {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 280px;
+    margin-right: 380px;
+    background-color: #333;
+}
+
+.descriptionButon {
+    animation-name: descriptionButon;
+}
+
+@keyframes descriptionButon {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-right: -200px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
 }
 
 
@@ -784,15 +869,16 @@
 
 .reserve-coffee {
     position: relative;
+    z-index: -1;
+    background-image: url("../images/reserve_bg.jpg");
 }
 
-.reserve-coffee-container {
+.reserve-coffee-container-outside {
     width: 1100px;
-    height: 380px;
-    position: absolute;
+    margin: 0 auto;
     border: 1px solid red;
-    top: 0;
-    margin-left: 400px;
+    height: 380px;
+    display: flex;
 }
 
 .reserve-coffee-bg>img {
@@ -803,18 +889,84 @@
     position: absolute;
     top: 0;
     margin-top: 100px;
+    animation-name: reserveCoffeeLogo;
+    animation-duration: 2s;
+}
+
+.reserveCoffeeLogo {
+    animation-name: reserveCoffeeLogo;
+}
+
+@keyframes reserveCoffeeLogo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
 }
 
 .reserve-coffee-reserve-coffee {
     color: white;
     font-size: 25px;
     margin-bottom: 10px;
+    animation-name: reserveCoffeeTitle;
+    animation-duration: 2s;
+}
+
+.reserveCoffeeTitle {
+    animation-name: reserveCoffeeTitle;
+}
+
+@keyframes reserveCoffeeTitle {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
 }
 
 .reserve-cofee-description {
     color: burlywood;
     font-size: 20px;
     width: 500px;
+    animation-name: reserveCoffeeDescription;
+    animation-duration: 2.5s;
+}
+
+.reserveCoffeeDescription {
+    animation-name: reserveCoffeeDescription;
+}
+
+@keyframes reserveCoffeeDescription {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
 }
 
 .reserve-coffee-description-container {
@@ -822,7 +974,7 @@
     margin-left: 200px;
 }
 
-.reserve-cofee-description-button {
+.reserve-coffee-description-button {
     width: 130px;
     padding: 10px;
     border: 2px solid burlywood;
@@ -835,14 +987,56 @@
     box-sizing: border-box;
     display: block;
     transition: .4s;
-    /* background-color: #d5c798; */
+    position: absolute;
+    margin-top: 20px;
+    background-color: transparent;
+    animation-duration: 3s;
+    animation-name: reserveCoffeeButton;
+    cursor: pointer;
+}
+
+.reserve-coffee-description-button:hover {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid burlywood;
+    color: white;
+    opacity: 0.5;
+    background-color: burlywood;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
     position: absolute;
     margin-top: 20px;
     background-color: transparent;
 }
 
-.reserve-coffee-image>img {
-    position: absolute;
+.reserveCoffeeButton {
+    animation-name: reserveCoffeeButton;
+}
+
+@keyframes reserveCoffeeButton {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+.reserve-coffee-image {
+    /* position: absolute; */
     right: 0;
     top: 0;
 }
@@ -865,8 +1059,7 @@
     height: 400px;
     ;
     border: 1px solid white;
-    position: absolute;
-    margin-left: 400px;
+    margin: 0 auto;
 }
 
 .favorite-button {
@@ -885,7 +1078,46 @@
     margin-top: 20px;
     background-color: transparent;
     float: right;
-    ;
+    animation-name: favoriteButton;
+    animation-duration: 3.2s;
+}
+
+.favoriteButton {
+    animation-name: favoriteButton;
+}
+
+@keyframes favoriteButton {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+.favorite-button:hover {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+    margin-top: 20px;
+    color: #333;
+    float: right;
 }
 
 .favorite-inner-container {
@@ -903,15 +1135,46 @@
 .favorite-title {
     font-size: 105px;
     font-weight: bold;
+    animation-name: favoriteTitle;
+    animation-duration: 2s;
+}
+
+.favoriteTitle {
+    animation-name: favoriteTitle;
+}
+
+@keyframes favoriteTitle {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
 }
 
 .favorite-second {
     font-size: 52px;
     font-weight: bold;
+    animation-name: favoriteTitle;
+    animation-duration: 2.5s;
+}
+
+.favoriteSecond {
+    animation-name: favoriteTitle;
 }
 
 .favorite-third {
     font-size: 30px;
+    animation-name: favoriteTitle;
+    animation-duration: 3s;
+}
+
+.favorite-forth {
+    animation-name: favoriteTitle;
+    animation-duration: 3.1s;
 }
 
 
@@ -928,11 +1191,93 @@
     position: relative;
 }
 
-.reserve-store-logo {
+.reseve-store-container {
+    width: 1000px;
+    height: 700px;
+    border: 1px solid yellow;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card-back-ground {
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border: 1px solid pink
+}
+
+.card-back-ground:hover>.the-front {
+    transform: perspective(600px) rotateY(-270deg);
+}
+
+.card-back-ground:hover>.the-back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.the-front {
     position: absolute;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 200px;
+    width: 350px;
+    margin-left: -15px;
+    height: 350px;
+    backface-visibility: hidden;
+    color: #333;
+    transition: transform 1s ease-in-out;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.the-back {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    backface-visibility: hidden;
+    color: #333;
+    transition: transform .6s linear;
+    transform: perspective(600px) rotateY(270deg)
+}
+
+.store-info-button {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+    margin-top: -80px;
+    margin-left: 100px;
+    position: absolute;
+    color: #333;
+    
+}
+
+.store-info-button:hover {
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #333;
+    color:white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+    margin-top: -80px;
+    margin-left: 100px;
+    position: absolute;
+    
+    
 }
 
 
