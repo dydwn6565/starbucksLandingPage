@@ -2,7 +2,15 @@
     margin: 0;
 }
 
-.header {}
+.header {
+    width: 100%;
+    background-color: #f6f5f0;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
 .header-container>img {
     width: 65px;
@@ -12,9 +20,9 @@
 }
 
 .header-container {
+    /* position: sticky; */
     width: 1000px;
     height: 100px;
-    background-color: #f6f5f0;
     /* border: 1px solid black; */
     margin-left: auto;
     margin-right: auto;
@@ -195,10 +203,7 @@
 
 .header-bottom-nav-extend-bg {
     background-image: url("../images/main_menu_pattern.jpg");
-    /* height: 100px; */
-    /* display: none; */
     left: 0;
-    /* top:100px; */
     width: 100%;
     position: absolute;
 }
@@ -262,6 +267,10 @@
     position: absolute;
     margin-top: 100px;
     margin-left: 80px;
+}
+
+.delightful-image-show {
+    opacity: 1;
     animation-duration: 4s;
     animation-name: delightfulImage;
 }
@@ -308,13 +317,15 @@
     margin-top: 420px;
     margin-left: 320px;
     position: absolute;
+}
+
+.visual-spoon-image-show {
     animation-duration: 6s;
     animation-name: visualSpoonImage;
 }
 
 .visualSpoonImage {
     animation-name: visualSpoonImage;
-    /* animation-duration: 7.5s; */
 }
 
 @keyframes visualSpoonImage {
@@ -334,6 +345,9 @@
     margin-left: 670px;
     position: absolute;
     z-index: 1;
+}
+
+.carabel-crumble-image-show {
     animation-name: carabelCrumbleImage;
     animation-duration: 5s;
 }
@@ -358,6 +372,9 @@
     margin-top: 80px;
     margin-left: 870px;
     position: absolute;
+}
+
+.oatmeal-latte-image-show {
     animation-name: oatmealLatteImage;
     animation-duration: 4s;
 }
@@ -388,7 +405,7 @@
 }
 
 .silder-table {
-    width: 50vw;
+    width: 50%;
     height: 50px;
     border-right: 1px solid black;
     background-color: #333;
@@ -428,19 +445,30 @@
 
 /* image slide */
 
-.slideshow-section {}
+.slideshow-section {
+    width: 100%;
+    height: 530px;
+    border: 1px solid black;
+    background-color: #f6f5f0;
+}
 
 .dot-components {
-    margin-top: 100px;
+    margin: 0 auto;
+    margin-top: 21%;
+    position: relative;
+    z-index: 2;
 }
 
 .image-slider-arrow-icons {
-    width: 720px;
+    border: 1px solid black;
+    width: 40%;
     height: 30px;
-    font-size: 50px;
-    margin-left: 600px;
-    margin-top: 100px;
-    position: absolute;
+    font-size: 40px;
+    margin: 0 auto;
+    /* margin-left: 600px; */
+    margin-top: 4%;
+    position: relative;
+    z-index: 2;
 }
 
 .slide-detail-button {
@@ -456,7 +484,8 @@
     box-sizing: border-box;
     display: block;
     transition: .4s;
-    margin-left: 41%
+    justify-content: space-evenly;
+    margin-left: 39%;
 }
 
 .slide-detail-button:hover {
@@ -478,6 +507,7 @@
     display: flex;
     width: 100%;
     background-color: #f6f5f0;
+    position: absolute;
 }
 
 .mySlides {
@@ -526,7 +556,6 @@
 
 .reward-image-container {
     display: flex;
-    /* z-index: 5; */
 }
 
 .reward-login-button {
@@ -702,6 +731,9 @@
 
 .season-product {
     z-index: 5;
+}
+
+.season-product-show {
     animation-duration: 2.5s;
     animation-name: iceCoffeeBlend;
 }
@@ -725,7 +757,6 @@
 
 .season-product-description-top {
     width: 500px;
-    animation-duration: 2.5s;
     border: 1px solid black;
     position: absolute;
     top: 0;
@@ -733,7 +764,12 @@
     margin-top: 100px;
     padding: 5px;
     font-family: sans-serif;
+    /* animation-name: descriptionTop; */
+}
+
+.season-product-description-top-show {
     animation-name: descriptionTop;
+    animation-duration: 2.5s;
 }
 
 .descriptionTop {
@@ -776,6 +812,11 @@
     margin-top: 180px;
     color: #592b18;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* animation-name: descriptionBottom;
+    animation-duration: 3s; */
+}
+
+.season-product-description-bottom-show {
     animation-name: descriptionBottom;
     animation-duration: 3s;
 }
@@ -819,8 +860,11 @@
     margin-top: 280px;
     margin-right: 380px;
     background-color: transparent;
+}
+
+.season-product-description-button-show {
     animation-duration: 3.5s;
-    animation-name: descriptionButon;
+    animation-name: descriptionButton;
 }
 
 .season-product-description-button:hover {
@@ -844,11 +888,11 @@
     background-color: #333;
 }
 
-.descriptionButon {
-    animation-name: descriptionButon;
+.descriptionButton {
+    animation-name: descriptionButton;
 }
 
-@keyframes descriptionButon {
+@keyframes descriptionButton {
     0% {
         opacity: 0;
     }
@@ -889,6 +933,9 @@
     position: absolute;
     top: 0;
     margin-top: 100px;
+}
+
+.reserve-coffee-logo-show {
     animation-name: reserveCoffeeLogo;
     animation-duration: 2s;
 }
@@ -917,6 +964,9 @@
     color: white;
     font-size: 25px;
     margin-bottom: 10px;
+}
+
+.reserve-coffee-reserve-coffee-show {
     animation-name: reserveCoffeeTitle;
     animation-duration: 2s;
 }
@@ -945,6 +995,9 @@
     color: burlywood;
     font-size: 20px;
     width: 500px;
+}
+
+.reserve-cofee-description-show {
     animation-name: reserveCoffeeDescription;
     animation-duration: 2.5s;
 }
@@ -990,9 +1043,12 @@
     position: absolute;
     margin-top: 20px;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.reserve-coffee-description-button-show {
     animation-duration: 3s;
     animation-name: reserveCoffeeButton;
-    cursor: pointer;
 }
 
 .reserve-coffee-description-button:hover {
@@ -1036,7 +1092,6 @@
 }
 
 .reserve-coffee-image {
-    /* position: absolute; */
     right: 0;
     top: 0;
 }
@@ -1078,6 +1133,9 @@
     margin-top: 20px;
     background-color: transparent;
     float: right;
+}
+
+.favorite-button-show {
     animation-name: favoriteButton;
     animation-duration: 3.2s;
 }
@@ -1135,6 +1193,9 @@
 .favorite-title {
     font-size: 105px;
     font-weight: bold;
+}
+
+.favorite-title-show {
     animation-name: favoriteTitle;
     animation-duration: 2s;
 }
@@ -1158,6 +1219,9 @@
 .favorite-second {
     font-size: 52px;
     font-weight: bold;
+}
+
+.favorite-second-show {
     animation-name: favoriteTitle;
     animation-duration: 2.5s;
 }
@@ -1168,14 +1232,19 @@
 
 .favorite-third {
     font-size: 30px;
+}
+
+.favorite-third-show {
     animation-name: favoriteTitle;
     animation-duration: 3s;
 }
 
-.favorite-forth {
+.favorite-forth-show {
     animation-name: favoriteTitle;
     animation-duration: 3.1s;
 }
+
+.favorite-forth {}
 
 
 /* reserve store */
@@ -1301,6 +1370,9 @@
     top: 0;
     margin-top: -50px;
     z-index: 1;
+}
+
+.find-store-first-image-show>img {
     animation-name: findStoreFirst;
     animation-duration: 2s;
 }
@@ -1328,6 +1400,9 @@
     margin-left: 200px;
     margin-top: 150px;
     z-index: 2;
+}
+
+.find-store-second-image-show>img {
     animation-name: findStoreFirst;
     animation-duration: 2s;
 }
@@ -1367,7 +1442,6 @@
     transition: .4s;
     margin-top: 20px;
     background-color: transparent;
-    
 }
 
 .find-store-button:hover {
@@ -1385,12 +1459,14 @@
     transition: .4s;
     margin-top: 20px;
     background-color: #333;
-  
 }
 
 .find-store-description-first {
     font-weight: bold;
     font-size: 20px;
+}
+
+.find-store-description-first-show {
     animation-name: findStoreText;
     animation-duration: 2s;
 }
@@ -1399,6 +1475,9 @@
     font-size: 17px;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+.find-store-description-second-show {
     animation-name: findStoreText;
     animation-duration: 2s;
 }
@@ -1407,8 +1486,8 @@
     animation-name: findStoreText;
 }
 
-.find-store-description-second-container,
-.find-store-button {
+.find-store-description-second-container-show,
+.find-store-button-show {
     animation-name: findStoreText;
     animation-duration: 2s;
 }
@@ -1480,17 +1559,13 @@
     color: #669900;
 }
 
-
-
 .terms-buttons {
     display: flex;
     justify-content: center;
-    
 }
 
 .terms-button {
     width: 130px;
-    
     padding: 10px;
     border: 2px solid white;
     color: white;

@@ -101,10 +101,10 @@ awardShowSlides(awardslideIndex);
 
 function awardShowSlides() {
   
-  console.log(awardslideIndex)
+  
   let i;
   let slides = document.getElementsByClassName("awardSlides");
-  console.log(slides.length);
+  
     if (awardslideIndex+5 > slides.length) {
       awardslideIndex = 1;
       
@@ -129,3 +129,39 @@ function awardShowSlides() {
   
   setTimeout(awardShowSlides, 2000); // Change image every 2 seconds
 }
+
+
+// scroll observer
+
+const images = document.querySelectorAll(".img");
+
+
+const observer = new IntersectionObserver((entries) => {
+  //  entries.forEach((entry) => {
+    // console.log(entries)
+    entries.forEach(entry =>{
+      if(entry.isIntersecting){
+        // console.log(entry.target.className.split(" ")[0]);
+        entry.target.classList.add(`${entry.target.className.split(" ")[0]}-show`);
+        // observer.unobserve(entry.target)
+        console.log(entry)
+      }else{
+        entry.target.classList.remove(
+          `${entry.target.className.split(" ")[0]}-show`
+        );
+      }
+      
+    })
+    
+},{
+  threshold:0.1
+});
+
+console.log(images)
+// images.map((image)=>{
+
+//   console.log(image);
+// })
+images.forEach(image =>{
+  observer.observe(image)
+})
