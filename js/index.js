@@ -35,7 +35,7 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
-  awardShowSlides(awardslideIndex+=n);
+  awardShowSlides((awardslideIndex += n));
 }
 
 function currentSlide(n) {
@@ -93,29 +93,22 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-
-
 let awardslideIndex = 1;
-let counter =1;
+let counter = 1;
 awardShowSlides(awardslideIndex);
 
 function awardShowSlides() {
-  
-  
   let i;
   let slides = document.getElementsByClassName("awardSlides");
-  
-    if (awardslideIndex+5 > slides.length) {
-      awardslideIndex = 1;
-      
-    }
-    if (counter < 1) {
-      awardslideIndex = slides.length;
-    }
+  if (awardslideIndex + 5 > slides.length) {
+    awardslideIndex = 1;
+  }
+  if (counter < 1) {
+    awardslideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-
 
   awardslideIndex++;
 
@@ -124,44 +117,35 @@ function awardShowSlides() {
   slides[awardslideIndex + 1].style.display = "block";
   slides[awardslideIndex + 2].style.display = "block";
   slides[awardslideIndex + 3].style.display = "block";
-  // slides[awardslideIndex + 4].style.display = "block";
-  
-  
+
   setTimeout(awardShowSlides, 2000); // Change image every 2 seconds
 }
-
 
 // scroll observer
 
 const images = document.querySelectorAll(".img");
 
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add(
+          `${entry.target.className.split(" ")[0]}-show`
+        );
 
-const observer = new IntersectionObserver((entries) => {
-  //  entries.forEach((entry) => {
-    // console.log(entries)
-    entries.forEach(entry =>{
-      if(entry.isIntersecting){
-        // console.log(entry.target.className.split(" ")[0]);
-        entry.target.classList.add(`${entry.target.className.split(" ")[0]}-show`);
-        // observer.unobserve(entry.target)
-        console.log(entry)
-      }else{
+        console.log(entry);
+      } else {
         entry.target.classList.remove(
           `${entry.target.className.split(" ")[0]}-show`
         );
       }
-      
-    })
-    
-},{
-  threshold:0.1
+    });
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+images.forEach((image) => {
+  observer.observe(image);
 });
-
-console.log(images)
-// images.map((image)=>{
-
-//   console.log(image);
-// })
-images.forEach(image =>{
-  observer.observe(image)
-})
