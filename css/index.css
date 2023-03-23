@@ -118,7 +118,7 @@
     padding: 5px;
 }
 
-.header-bottom-nav-coffee-bg {
+.header-bottom-nav-coffee-bg-coffee,.header-bottom-nav-coffee-bg-menu,.header-bottom-nav-coffee-bg-store,.header-bottom-nav-coffee-bg-responsibility,.header-bottom-nav-coffee-bg-reward,.header-bottom-nav-coffee-bg-news {
     width: 100%;
     margin: 0 auto;
     background-color: #333;
@@ -151,51 +151,56 @@
     margin-right: 80px;
 }
 
-.header-bottom-nav-coffee-bg {
+.header-bottom-nav-coffee-bg-coffee,.header-bottom-nav-coffee-bg-menu,.header-bottom-nav-coffee-bg-store,.header-bottom-nav-coffee-bg-responsibility,.header-bottom-nav-coffee-bg-reward,.header-bottom-nav-coffee-bg-news {
     display: none;
 }
 
-.header-bottom-nav-coffee:hover,
+ .header-bottom-nav-coffee:hover,
 .header-bottom-nav-menu:hover,
 .header-bottom-nav-store:hover,
 .header-bottom-nav-responsibility:hover,
 .header-bottom-nav-my-starbucks-reward:hover,
 .header-bottom-nav-news:hover {
     background-color: #333;
-    height: 55px;
+    height: 105px;
     color: #669900;
-}
+} 
 
-.header-bottom-nav-coffee:hover+.header-bottom-nav-coffee-bg {
+
+
+/* .header-bottom-nav-coffee-title:hover +.header-bottom-nav-coffee-bg-coffee {
     display: block;
     background-color: #333;
+} */
+
+.header-bottom-nav-coffee-title:hover{
+    background-color: #333;
+        height: 105px;
+        color: #669900;
 }
 
-.header-bottom-nav-menu:hover+.header-bottom-nav-coffee-bg {
+
+
+/* .header-bottom-nav-coffee-bg-coffee:hover{
+    display: block;
+    background-color: #333;
+} */
+
+.header-bottom-nav-coffee:hover+.header-bottom-nav-coffee-bg-coffee, .header-bottom-nav-menu:hover+.header-bottom-nav-coffee-bg-menu,.header-bottom-nav-store:hover+.header-bottom-nav-coffee-bg-store, .header-bottom-nav-responsibility:hover+.header-bottom-nav-coffee-bg-responsibility
+,.header-bottom-nav-my-starbucks-reward:hover+.header-bottom-nav-coffee-bg-reward, .header-bottom-nav-news:hover+.header-bottom-nav-coffee-bg-news
+{
     display: block;
     color: red;
 }
 
-.header-bottom-nav-store:hover+.header-bottom-nav-coffee-bg {
+.header-bottom-nav-coffee-bg-coffee:hover,
+.header-bottom-nav-coffee-bg-menu:hover,
+.header-bottom-nav-coffee-bg-store:hover,
+.header-bottom-nav-coffee-bg-responsibility:hover,
+.header-bottom-nav-coffee-bg-reward:hover,
+.header-bottom-nav-coffee-bg-news:hover {
     display: block;
-    color: red;
 }
-
-.header-bottom-nav-responsibility:hover+.header-bottom-nav-coffee-bg {
-    display: block;
-    color: red;
-}
-
-.header-bottom-nav-my-starbucks-reward:hover+.header-bottom-nav-coffee-bg {
-    display: block;
-    color: red;
-}
-
-.header-bottom-nav-news:hover+.header-bottom-nav-coffee-bg {
-    display: block;
-    color: red;
-}
-
 .header-bottom-nav-extend-bg {
     background-image: url("../images/main_menu_pattern.jpg");
     left: 0;
@@ -208,12 +213,27 @@
     margin: 0 auto;
 }
 
-.header-bottom-nav-coffee:hover+.header-bottom-nav-coffee-bg {
+/* .header-bottom-nav-coffee-bg:hover~.header-bottom-nav-coffee {
     display: block;
+    
+} */
+
+/* .header-bottom-nav .header-bottom-nav-coffee-bg:hover 
+.header-bottom-nav-coffee-bg:hover {
+
+    display: block
 }
 
+  .header-bottom-nav-coffee-bg:hover ~.header-bottom-nav-coffee-bg{
+
+        display:block;
+        background-color: #333;
+            height: 105px;
+            color: #669900;
+    
+} */
 .header-bottom-nav-title {
-    margin-top: 30px;
+    margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     margin-bottom: 10px;
@@ -269,7 +289,7 @@
     animation-name: delightfulImage;
 }
 
-.deflightful-detail-button {
+/* .deflightful-detail-button {
     color: #592b18;
     width: 130px;
     padding: 10px;
@@ -286,7 +306,7 @@
     margin-top: 35px;
     margin-left: 170px;
     position: absolute;
-}
+} */
 
 .deflightful-detail-button:hover {
     background-color: #592b18;
@@ -404,6 +424,7 @@
     background-color: #333;
     display: flex;
     justify-content: end;
+    margin-top:-0.5px;
 }
 
 .silder-table>i {
@@ -438,20 +459,20 @@
 
 .slideshow-section {
     width: 100%;
-    height: 530px;
+    height: 400px;
     min-width: 1370px;
     background-color: #f6f5f0;
 }
 
 .dot-components {
-    margin-top: 22%;
+    margin-top: 200px;
     position: relative;
     z-index: 2;
 }
 
 .image-slider-arrow-icons {
     font-size: 40px;
-    margin-top: -22%;
+    margin-top: -180px;
     width: 40%;
     height: 30px;
     margin-left: auto;
@@ -460,7 +481,7 @@
     z-index: 2;
 }
 
-.slide-detail-button {
+/* .slide-detail-button {
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -480,7 +501,7 @@
 .slide-detail-button:hover {
     color: white;
     background-color: #333;
-}
+} */
 
 .prev {
     float: left;
@@ -494,7 +515,7 @@
 
 .slideshow-container {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     background-color: #f6f5f0;
 }
 
@@ -505,6 +526,8 @@
 
 .mySlides>img {
     max-width: 100%;
+    width:700px;
+    height: 300px;
 }
 
 .dot {
@@ -568,7 +591,7 @@
     background-color: transparent;
 }
 
-.reward-signin-button {
+/* .reward-signin-button {
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -587,7 +610,7 @@
 .reward-signin-button:hover {
     background-color: #333;
     color: white;
-}
+} */
 
 .reward-e-gift {
     width: 280px;
@@ -709,7 +732,7 @@
     background-image: url("../images/season_product_bg.jpg");
     width: 100%;
     height: 420px;
-    margin-top: -130px;
+    margin-top: -50px;
     min-width: 1370px;
 }
 
@@ -721,6 +744,10 @@
 
 .season-product {
     z-index: 5;
+}
+.season-product >img{
+    width: 400px;
+    height: 420px;
 }
 
 .season-product-show {
@@ -826,7 +853,7 @@
     }
 }
 
-.season-product-description-button {
+/* .season-product-description-button {
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -845,14 +872,14 @@
     margin-top: 280px;
     margin-right: 380px;
     background-color: transparent;
-}
+} */
 
 .season-product-description-button-show {
     animation-duration: 3.5s;
     animation-name: descriptionButton;
 }
 
-.season-product-description-button:hover {
+/* .season-product-description-button:hover {
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -871,7 +898,7 @@
     margin-top: 280px;
     margin-right: 380px;
     background-color: #333;
-}
+} */
 
 .descriptionButton {
     animation-name: descriptionButton;
@@ -912,6 +939,7 @@
 
 .reserve-coffee-bg>img {
     z-index: -1;
+    
 }
 
 .reserve-coffee-logo {
@@ -1012,7 +1040,7 @@
     margin-left: 200px;
 }
 
-.reserve-coffee-description-button {
+/* .reserve-coffee-description-button {
     width: 130px;
     padding: 10px;
     border: 2px solid burlywood;
@@ -1029,14 +1057,14 @@
     margin-top: 20px;
     background-color: transparent;
     cursor: pointer;
-}
+} */
 
 .reserve-coffee-description-button-show {
     animation-duration: 3s;
     animation-name: reserveCoffeeButton;
 }
 
-.reserve-coffee-description-button:hover {
+/* .reserve-coffee-description-button:hover {
     width: 130px;
     padding: 10px;
     border: 2px solid burlywood;
@@ -1054,7 +1082,7 @@
     position: absolute;
     margin-top: 20px;
     background-color: transparent;
-}
+} */
 
 .reserveCoffeeButton {
     animation-name: reserveCoffeeButton;
@@ -1080,12 +1108,15 @@
     right: 0;
     top: 0;
 }
-
+.reserve-coffee-image >img{
+    width: 400px;
+    height: 400px;
+}
 
 /* favorite */
 
 .favorite {
-    background-image: url("../images/favorite_bg.jpg");
+    background-image: url("../images/cafeinside.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -1101,7 +1132,7 @@
     margin: 0 auto;
 }
 
-.favorite-button {
+/* .favorite-button {
     width: 130px;
     padding: 10px;
     border: 2px solid white;
@@ -1117,7 +1148,7 @@
     margin-top: 20px;
     background-color: transparent;
     float: right;
-}
+} */
 
 .favorite-button-show {
     animation-name: favoriteButton;
@@ -1144,7 +1175,7 @@
     }
 }
 
-.favorite-button:hover {
+/* .favorite-button:hover {
     width: 130px;
     padding: 10px;
     border: 2px solid white;
@@ -1160,7 +1191,7 @@
     margin-top: 20px;
     color: #333;
     float: right;
-}
+} */
 
 .favorite-inner-container {
     width: 500px;
@@ -1232,7 +1263,7 @@
 /* reserve store */
 
 .reserve-store {
-    background-image: url("../images/reserve_store_bg.jpg");
+    background-image: url("../images/outsideofcafe.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -1279,6 +1310,10 @@
     transform: perspective(600px) rotateY(0deg);
 }
 
+.the-front >img{
+    width: 300px;
+    
+}
 .the-back {
     position: absolute;
     width: 350px;
@@ -1288,8 +1323,11 @@
     transition: transform .6s linear;
     transform: perspective(600px) rotateY(270deg)
 }
-
-.store-info-button {
+.the-back >img{
+    width: 320px;
+    height: 320px;
+}
+/* .store-info-button {
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -1306,7 +1344,7 @@
     margin-left: 100px;
     position: absolute;
     color: #333;
-}
+} */
 
 .store-info-button:hover {
     width: 130px;
@@ -1349,6 +1387,7 @@
     border-radius: 100%;
     position: absolute;
     top: 0;
+    width: 300px;
     margin-top: -50px;
     z-index: 1;
 }
@@ -1381,11 +1420,13 @@
     margin-left: 200px;
     margin-top: 150px;
     z-index: 2;
+    width: 200px;
 }
 
 .find-store-second-image-show>img {
     animation-name: findStoreFirst;
     animation-duration: 2s;
+    
 }
 
 .find-store-third-image>img {
@@ -1407,7 +1448,7 @@
     color: #333;
 }
 
-.find-store-button {
+/* .find-store-button {
     width: 130px;
     padding: 10px;
     border: 2px solid #333;
@@ -1439,7 +1480,7 @@
     transition: .4s;
     margin-top: 20px;
     background-color: #333;
-}
+} */
 
 .find-store-description-first {
     font-weight: bold;
@@ -1544,7 +1585,7 @@
     justify-content: center;
 }
 
-.terms-button {
+/* .terms-button {
     width: 130px;
     padding: 10px;
     border: 2px solid white;
@@ -1560,7 +1601,7 @@
     margin-top: 30px;
     background-color: transparent;
     margin-right: 10px;
-}
+} */
 
 .copyright {
     color: #999;

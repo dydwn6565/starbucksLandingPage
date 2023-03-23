@@ -1,11 +1,11 @@
 const Info = [
-  "Starbucks electronic recipt event",
+  "Yong Cafe electronic receipt event",
   "Change the operting hour at Christmas day",
-  "2022 Starbucks Planner recipt event",
-  "Starbucks siren order application version update",
-  "Starbucks electronic recipt event",
+  "2023 Yong Cafe Planner receipt event",
+  "Yong Cafe siren order application version update",
+  "Yong Cafe electronic receipt event",
   "Change the operting hour at Christmas day",
-  "2022 Starbucks Planner recipt event",
+  "2022 Yong Cafe Planner receipt event",
 ];
 
 let initalValue = 0;
@@ -61,7 +61,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-
+  console.log(slideIndex)
   if (slides.length - slideIndex === 1) {
     slides[slideIndex - 1].style.order = 1;
     slides[slideIndex].style.order = 2;
