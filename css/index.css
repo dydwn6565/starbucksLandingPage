@@ -254,59 +254,26 @@
   margin-left: 320px;
   position: absolute;
 
-  animation: visualSpoonImage 6s forwards;
 }
 
-@keyframes visualSpoonImage {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 
 .carabel-crumble-image {
   margin-top: 150px;
   margin-left: 670px;
   position: absolute;
   z-index: 1;
-  animation: carabelCrumbleImage 5s forwards;
-}
-
-@keyframes carabelCrumbleImage {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  
 }
 
 .oatmeal-latte-image {
   margin-top: 80px;
   margin-left: 870px;
   position: absolute;
-  animation: oatmealLatteImage 4s forwards;
+  
 }
 
-@keyframes oatmealLatteImage {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 
 /* info slider */
 
@@ -584,13 +551,14 @@
   height: 420px;
   margin-top: -50px;
   min-width: 1370px;
-  animation: iceCoffeeBlend 2.5s forwards;
+  
 }
 
 .ice-coffee-blend-container {
   position: relative;
   width: 1000px;
   margin: 0 auto;
+  
 }
 
 .season-product {
@@ -599,20 +567,9 @@
 .season-product > img {
   width: 400px;
   height: 420px;
+  
 }
 
-@keyframes iceCoffeeBlend {
-  0% {
-    opacity: 0;
-    margin-left: -200px;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
 
 .season-product-description-top {
   width: 500px;
@@ -622,24 +579,9 @@
   margin-top: 100px;
   padding: 5px;
   font-family: sans-serif;
-  animation: descriptionTop 2.5s forwards;
+  
 }
 
-@keyframes descriptionTop {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    margin-right: -200px;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
 
 .season-product-description-top-first {
   font-weight: bold;
@@ -660,24 +602,9 @@
   margin-top: 180px;
   color: #592b18;
   font-family: Georgia, "Times New Roman", Times, serif;
-  animation: descriptionBottom 3s forwards;
+  
 }
 
-@keyframes descriptionBottom {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    margin-right: -200px;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
 
 /* reserve-coffee */
 
@@ -693,7 +620,7 @@
   margin: 0 auto;
   height: 380px;
   display: flex;
-  animation: reserveCoffeeLogo 2s forwards;
+  
 }
 
 .reserve-coffee-bg > img {
@@ -706,88 +633,30 @@
   margin-top: 100px;
 }
 
-@keyframes reserveCoffeeLogo {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    margin-left: -200px;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
+
 
 .reserve-coffee-reserve-coffee {
   color: white;
   font-size: 25px;
   margin-bottom: 10px;
-  animation: reserveCoffeeTitle 2s forwards;
+  
 }
 
-@keyframes reserveCoffeeTitle {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    margin-left: -200px;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
 
 .reserve-cofee-description {
   color: burlywood;
   font-size: 20px;
   width: 500px;
-  animation: reserveCoffeeDescription 2.5s forwards;
+  
 }
 
-@keyframes reserveCoffeeDescription {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    margin-left: -200px;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
 
 .reserve-coffee-description-container {
   margin-top: 100px;
   margin-left: 200px;
 }
 
-@keyframes reserveCoffeeButton {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    margin-left: -200px;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    margin-left: 0px;
-  }
-}
+
 
 .reserve-coffee-image {
   right: 0;
@@ -809,7 +678,10 @@
   width: 100%;
   height: 700px;
   min-width: 1370px;
+filter: blur(0.5px);
+
 }
+
 
 .favorite-container {
   width: 1100px;
@@ -824,46 +696,30 @@
 
 .favorite-inner-container > div {
   text-align: right;
-  color: white;
+  color:white;
+  
+  
 }
 
 .favorite-title {
   font-size: 105px;
   font-weight: bold;
-  animation: favoriteTitle 2s forwards;
+
 }
 
-@keyframes favoriteTitle {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-}
 
 .favorite-second {
   font-size: 52px;
   font-weight: bold;
-  animation: favoriteTitle 2s forwards;
+  
 }
 
 .favorite-third {
   font-size: 30px;
-  animation: favoriteTitle 3s forwards;
+  
 }
 
-.favorite-forth-show {
-  animation-name: favoriteTitle;
-  animation-duration: 3.1s;
-}
 
-.favorite-forth {
-  animation: favoriteTitle 3.1s forwards;
-}
 
 /* reserve store */
 
@@ -975,21 +831,9 @@
   width: 300px;
   margin-top: -50px;
   z-index: 1;
-  animation: findStoreFirst 2s forwards;
+  
 }
 
-@keyframes findStoreFirst {
-  0% {
-    margin-left: -200px;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    margin-right: 0;
-  }
-}
 
 .find-store-second-image > img {
   border-radius: 100%;
@@ -998,7 +842,7 @@
   margin-top: 150px;
   z-index: 2;
   width: 200px;
-  animation: findStoreFirst 2s forwards;
+  
 }
 
 .find-store-third-image > img {
@@ -1023,32 +867,17 @@
 .find-store-description-first {
   font-weight: bold;
   font-size: 20px;
-  animation: findStoreText 2s forwards;
+  
 }
 
 .find-store-description-second {
   font-size: 17px;
   margin-bottom: 10px;
   font-weight: bold;
-  animation: findStoreText 2s forwards;
+  
 }
 
-.find-store-description-second-container {
-  animation: findStoreText 2s forwards;
-}
 
-@keyframes findStoreText {
-  0% {
-    margin-left: 200px;
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
 
 /* award */
 
