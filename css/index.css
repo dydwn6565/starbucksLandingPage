@@ -4,7 +4,7 @@
 
 .header {
   width: 100%;
-  min-width: 1370px;
+
   background-color: #f6f5f0;
   position: -webkit-sticky;
   /* Safari */
@@ -16,17 +16,17 @@
 .header-container > img {
   width: 65px;
   height: 65px;
-  margin-top: 20px;
+  margin-top: 13px;
   margin-left: 20px;
 }
 
 .header-container {
-  width: 1000px;
+  /* width: 1000px; */
   height: 100px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .header-nav {
@@ -55,9 +55,9 @@
 }
 
 .header-bottom-nav {
-  width: 800px;
-  height: 30px;
-  float: right;
+  /* width: 800px; */
+  /* height: 30px;
+  float: right; */
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
@@ -69,28 +69,28 @@
 .header-bottom-nav-coffee,
 .header-bottom-nav-menu,
 .header-bottom-nav-store {
-  width: 80px;
+  /* width: 80px; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
 }
 
 .header-bottom-nav-responsibility {
-  width: 150px;
+  /* width: 150px; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
 }
 
 .header-bottom-nav-my-starbucks-reward {
-  width: 220px;
+  /* width: 220px; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
 }
 
 .header-bottom-nav-news {
-  width: 120px;
+  /* width: 120px; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -236,59 +236,50 @@
 
 .coffee-image {
   background-image: url("https://keen-leakey-d05b43.netlify.app/images/visual_bg.jpg");
-  background-color: bl;
-  width: 100%;
+
   height: 648px;
   background-position: center;
-  min-width: 1370px;
 }
 
 .coffee-image-container {
-  width: 1000px;
-  height: 648px;
+  /* height: 648px;
   margin: 0 auto;
+  position:absolute; */
+  display: flex;
+  justify-content: right;
 }
 
 .visual-spoon-image {
-  margin-top: 420px;
-  margin-left: 320px;
-  position: absolute;
-
+  /* margin-top: 420px;
+  margin-left: 320px; */
+  /* position: absolute; */
+  margin-top: 400px;
 }
 
-
-
 .carabel-crumble-image {
-  margin-top: 150px;
-  margin-left: 670px;
-  position: absolute;
-  z-index: 1;
-  
+  margin-top: 100px;
+  margin-left: -100px;
 }
 
 .oatmeal-latte-image {
-  margin-top: 80px;
-  margin-left: 870px;
-  position: absolute;
-  
+  margin-top: 100px;
+  margin-left: -70px;
 }
-
-
 
 /* info slider */
 
 .slider {
-  width: 100%;
+  /* width: 100%; */
   height: 50px;
-  min-width: 1370px;
+  /* min-width: 1370px; */
 }
 
 .silder-table {
-  width: 50%;
+  /* width: 50%; */
   height: 50px;
   background-color: #333;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   margin-top: -0.5px;
 }
 
@@ -299,13 +290,6 @@
   margin-top: 12px;
 }
 
-.starbuck-promotion {
-  display: flex;
-  justify-content: end;
-  margin-top: -37px;
-  margin-right: 25vw;
-}
-
 .silder-title {
   color: white;
   display: flex;
@@ -314,17 +298,14 @@
 }
 
 .silder-show {
-  width: 500px;
-  height: 20px;
   margin-left: 10px;
 }
 
 /* image slide */
 
 .slideshow-section {
-  width: 100%;
   height: 400px;
-  min-width: 1370px;
+
   background-color: #f6f5f0;
 }
 
@@ -477,7 +458,7 @@
 .youtube {
   position: relative;
   z-index: -1;
-  min-width: 1370px;
+  /* min-width: 1370px; */
 }
 
 .youtube-video-container {
@@ -547,18 +528,16 @@
 
 .ice-coffee-blend {
   background-image: url("../images/season_product_bg.jpg");
-  width: 100%;
+  /* width: 100%; */
   height: 420px;
   margin-top: -50px;
-  min-width: 1370px;
-  
+  /* min-width: 1370px; */
 }
 
 .ice-coffee-blend-container {
   position: relative;
-  width: 1000px;
+  /* width: 1000px; */
   margin: 0 auto;
-  
 }
 
 .season-product {
@@ -567,9 +546,7 @@
 .season-product > img {
   width: 400px;
   height: 420px;
-  
 }
-
 
 .season-product-description-top {
   width: 500px;
@@ -579,9 +556,7 @@
   margin-top: 100px;
   padding: 5px;
   font-family: sans-serif;
-  
 }
-
 
 .season-product-description-top-first {
   font-weight: bold;
@@ -602,25 +577,22 @@
   margin-top: 180px;
   color: #592b18;
   font-family: Georgia, "Times New Roman", Times, serif;
-  
 }
-
 
 /* reserve-coffee */
 
 .reserve-coffee {
   position: relative;
-  min-width: 1370px;
+  /* min-width: 1370px; */
   z-index: -1;
   background-image: url("../images/reserve_bg.jpg");
 }
 
 .reserve-coffee-container-outside {
-  width: 1100px;
+  /* width: 1100px; */
   margin: 0 auto;
   height: 380px;
   display: flex;
-  
 }
 
 .reserve-coffee-bg > img {
@@ -633,30 +605,22 @@
   margin-top: 100px;
 }
 
-
-
 .reserve-coffee-reserve-coffee {
   color: white;
   font-size: 25px;
   margin-bottom: 10px;
-  
 }
-
 
 .reserve-cofee-description {
   color: burlywood;
   font-size: 20px;
   width: 500px;
-  
 }
-
 
 .reserve-coffee-description-container {
   margin-top: 100px;
   margin-left: 200px;
 }
-
-
 
 .reserve-coffee-image {
   right: 0;
@@ -675,13 +639,11 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
+  /* width: 100%; */
   height: 700px;
-  min-width: 1370px;
-filter: blur(0.5px);
-
+  /* min-width: 1370px; */
+  filter: blur(0.5px);
 }
-
 
 .favorite-container {
   width: 1100px;
@@ -696,30 +658,22 @@ filter: blur(0.5px);
 
 .favorite-inner-container > div {
   text-align: right;
-  color:white;
-  
-  
+  color: white;
 }
 
 .favorite-title {
   font-size: 105px;
   font-weight: bold;
-
 }
-
 
 .favorite-second {
   font-size: 52px;
   font-weight: bold;
-  
 }
 
 .favorite-third {
   font-size: 30px;
-  
 }
-
-
 
 /* reserve store */
 
@@ -727,12 +681,12 @@ filter: blur(0.5px);
   background-image: url("../images/outsideofcafe.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  
+
   background-size: cover;
-  width: 100%;
+  /* width: 100%; */
   height: 700px;
   position: relative;
-  min-width: 1370px;
+  /* min-width: 1370px; */
 }
 
 .reseve-store-container {
@@ -814,11 +768,11 @@ filter: blur(0.5px);
   height: 400px;
   background-image: url("../images/find_store_bg.jpg");
   position: relative;
-  min-width: 1370px;
+  /* min-width: 1370px; */
 }
 
 .find-store-container {
-  width: 1200px;
+  /* width: 1200px; */
   height: 400px;
   margin: 0 auto;
   position: relative;
@@ -831,9 +785,7 @@ filter: blur(0.5px);
   width: 300px;
   margin-top: -50px;
   z-index: 1;
-  
 }
-
 
 .find-store-second-image > img {
   border-radius: 100%;
@@ -842,7 +794,6 @@ filter: blur(0.5px);
   margin-top: 150px;
   z-index: 2;
   width: 200px;
-  
 }
 
 .find-store-third-image > img {
@@ -867,31 +818,27 @@ filter: blur(0.5px);
 .find-store-description-first {
   font-weight: bold;
   font-size: 20px;
-  
 }
 
 .find-store-description-second {
   font-size: 17px;
   margin-bottom: 10px;
   font-weight: bold;
-  
 }
-
-
 
 /* award */
 
 .award {
-  width: 100%;
+  /* width: 100%; */
   height: 200px;
   background-color: #272727;
   position: relative;
-  min-width: 1370px;
+  /* min-width: 1370px; */
 }
 
 .award-container {
   position: relative;
-  width: 1000px;
+  /* width: 1000px; */
   height: 200px;
   margin: 0 auto;
 }
@@ -948,4 +895,99 @@ filter: blur(0.5px);
   margin: 0 auto;
   display: block;
   margin-top: 50px;
+}
+@media only screen and (max-width: 870px) {
+  .header-bottom-nav {
+    font-size: 12px;
+  }
+
+  .header-container > img {
+    width: 45px;
+    height: 45px;
+    margin-top: 19px;
+  }
+  .coffee-image-container {
+    transform: scale(0.7);
+    margin-left: 500px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .header-bottom-nav {
+    font-size: 12px;
+  }
+  .header-container > img {
+    width: 45px;
+    height: 45px;
+    margin-top: 19px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .header-bottom-nav {
+    font-size: 10px;
+  }
+
+  .header-container > img {
+    width: 35px;
+    height: 35px;
+    margin-top: 22px;
+  }
+  .coffee-image-container {
+    transform: scale(0.6);
+    margin-left: 500px;
+  }
+  .coffee-image {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .coffee-image-container {
+    transform: scale(0.5);
+    margin-left: 90%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .silder-table {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .header-bottom-nav {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .header-container > img {
+    display: none;
+  }
+  .coffee-image-container {
+    transform: scale(0.4);
+  }
+}
+@media only screen and (max-width: 360px) {
+  .coffee-image-container {
+    transform: scale(0.3);
+  }
+  .coffee-image {
+    height: 450px;
+  }
+     .silder-table {
+       font-size: 11px;
+     }
+}
+
+@media only screen and (max-width: 330px) {
+  .header-bottom-nav {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .coffee-image-container {
+    transform: scale(0.25);
+  }
+     .silder-table {
+       font-size: 10px;
+     }
 }
