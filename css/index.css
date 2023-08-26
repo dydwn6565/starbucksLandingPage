@@ -349,7 +349,7 @@
 .mySlides > img {
   max-width: 100%;
   width: 700px;
-  height: 300px;
+  max-height: 300px;
 }
 
 .dot {
@@ -462,8 +462,8 @@
 }
 
 .youtube-video-container {
-  margin-top: -150px;
-  left: 0;
+  margin-top: -160px;
+  /* left: 0; */
 }
 
 .youtube-cover {
@@ -528,15 +528,13 @@
 
 .ice-coffee-blend {
   background-image: url("../images/season_product_bg.jpg");
-  /* width: 100%; */
+
   height: 420px;
   margin-top: -50px;
-  /* min-width: 1370px; */
 }
 
 .ice-coffee-blend-container {
   position: relative;
-  /* width: 1000px; */
   margin: 0 auto;
 }
 
@@ -547,12 +545,14 @@
   width: 400px;
   height: 420px;
 }
-
-.season-product-description-top {
+.season-product-description-container {
   width: 500px;
   position: absolute;
   top: 0;
   right: 0;
+  margin-right: 10%;
+}
+.season-product-description-top {
   margin-top: 100px;
   padding: 5px;
   font-family: sans-serif;
@@ -569,12 +569,8 @@
 }
 
 .season-product-description-bottom {
-  width: 500px;
-  position: absolute;
-  top: 0;
-  right: 0;
   padding: 5px;
-  margin-top: 180px;
+
   color: #592b18;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -583,15 +579,13 @@
 
 .reserve-coffee {
   position: relative;
-  /* min-width: 1370px; */
   z-index: -1;
   background-image: url("../images/reserve_bg.jpg");
 }
 
 .reserve-coffee-container-outside {
-  /* width: 1100px; */
   margin: 0 auto;
-  height: 380px;
+  /* height: 380px; */
   display: flex;
 }
 
@@ -615,6 +609,7 @@
   color: burlywood;
   font-size: 20px;
   width: 500px;
+  margin-right: 15px;
 }
 
 .reserve-coffee-description-container {
@@ -628,7 +623,6 @@
 }
 .reserve-coffee-image > img {
   width: 400px;
-  height: 400px;
 }
 
 /* favorite */
@@ -639,21 +633,17 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  /* width: 100%; */
   height: 700px;
-  /* min-width: 1370px; */
   filter: blur(0.5px);
 }
 
 .favorite-container {
-  width: 1100px;
-  height: 400px;
-  margin: 0 auto;
+  right: 0;
 }
 
 .favorite-inner-container {
   width: 500px;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .favorite-inner-container > div {
@@ -690,7 +680,6 @@
 }
 
 .reseve-store-container {
-  width: 1000px;
   height: 700px;
   margin: 0 auto;
   justify-content: center;
@@ -716,8 +705,8 @@
 
 .the-front {
   position: absolute;
-  width: 350px;
-  margin-left: -15px;
+  /* width: 350px; */
+  /* margin-left: -15px; */
   height: 350px;
   backface-visibility: hidden;
   color: #333;
@@ -729,9 +718,9 @@
   width: 300px;
 }
 .the-back {
-  position: absolute;
+  /* position: absolute;
   width: 350px;
-  height: 350px;
+  height: 350px; */
   backface-visibility: hidden;
   color: #333;
   transition: transform 0.6s linear;
@@ -773,7 +762,7 @@
 
 .find-store-container {
   /* width: 1200px; */
-  height: 400px;
+  /* height: 400px; */
   margin: 0 auto;
   position: relative;
 }
@@ -808,7 +797,7 @@
 }
 
 .find-store-description {
-  width: 700px;
+  /* width: 700px; */
   height: 200px;
   margin-left: 450px;
   position: relative;
@@ -896,6 +885,160 @@
   display: block;
   margin-top: 50px;
 }
+@media only screen and (max-width: 1600px) {
+  .youtube {
+    height: 900px;
+  }
+}
+@media only screen and (max-width: 1268px) {
+  .youtube {
+    height: 880px;
+  }
+  .youtube-video-container {
+    margin-top: -175px;
+  }
+  .find-store-container {
+    /* width: 1000px; */
+  }
+}
+@media only screen and (max-width: 1190px) {
+  .youtube {
+    height: 855px;
+  }
+
+  .youtube-video-container {
+    margin-top: -210px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .youtube {
+    height: 815px;
+  }
+
+  .youtube-video-container {
+    margin-top: -240px;
+  }
+  .youtube-video {
+    height: 950px;
+  }
+  .ice-coffee-blend {
+    height: 280px;
+  }
+
+  .season-product > img {
+    height: 280px;
+    width: unset;
+  }
+  .season-product-description-top-first {
+    font-size: 14px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 20px;
+  }
+
+  .season-product-description-bottom {
+    font-size: 12px;
+  }
+  .reserve-coffee-logo {
+    display: none;
+  }
+  .reserve-coffee-description-container {
+    margin-left: 5%;
+  }
+  .reserve-coffee-image {
+    width: 300px;
+  }
+  .reserve-coffee-reserve-coffee {
+    font-size: 20px;
+  }
+  .reserve-cofee-description {
+    font-size: 16px;
+  }
+  .reserve-coffee-image > img {
+    width: 320px;
+    margin-left: 13%;
+  }
+  .find-store-container {
+    /* width: 900px; */
+  }
+    .floating-image-third{
+      margin-right:unset;
+    }
+    .floating-image-third>img{
+      width:220px;
+      margin-top:100px;
+      
+    }
+}
+@media only screen and (max-width: 1000px) {
+  .youtube {
+    height: 790px;
+  }
+
+  .youtube-video {
+    height: 930px;
+  }
+  .floating-image-first>img{
+    width:200px;
+  }
+  .floating-image-second>img{
+    width:150px;
+  }
+  .floating-image-third{
+    width:220px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .youtube {
+    height: 740px;
+  }
+
+  .youtube-video {
+    height: 935px;
+  }
+  .ice-coffee-blend {
+    height: 300px;
+  }
+  .season-product > img {
+    height: 300px;
+    width: unset;
+  }
+
+  .season-product-description-top {
+    width: unset;
+    margin-right: 120px;
+  }
+  .season-product-description-top-first {
+    font-size: 12px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 18px;
+  }
+  .season-product-description-container {
+    margin-right: unset;
+  }
+  .reserve-cofee-description {
+    width: 400px;
+  }
+  .reserve-coffee-reserve-coffee {
+    font-size: 17px;
+  }
+
+  .reserve-cofee-description {
+    font-size: 14px;
+  }
+  .reserve-coffee-image > img {
+    width: 330px;
+  }
+  .find-store-container {
+    /* width: 800px; */
+  }
+  .find-store-description {
+    width: 40vw;
+  }
+}
 @media only screen and (max-width: 870px) {
   .header-bottom-nav {
     font-size: 12px;
@@ -910,6 +1053,61 @@
     transform: scale(0.7);
     margin-left: 500px;
   }
+  .image-slider-arrow-icons {
+    margin-top: -22%;
+  }
+  .youtube {
+    height: 690px;
+  }
+
+  .youtube-video {
+    height: 870px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .season-product-description-container {
+    width: 400px;
+    margin-right: 5%;
+  }
+  .reserve-coffee-image > img {
+    width: 270px;
+    margin-left: 13%;
+  }
+  .reserve-cofee-description {
+    width: 350px;
+  }
+  .find-store {
+    height: 300px;
+  }
+  .find-store-first-image > img {
+    width: 200px;
+  }
+  .find-store-second-image > img {
+    margin-left: 74px;
+    margin-top: 70px;
+    width: 150px;
+  }
+  .find-store-description {
+    margin-left: 320px;
+  }
+  .find-store-third-image > img {
+    display: none;
+  }
+  .find-store-last-image > img {
+    margin-left: 43vw;
+  }
+    .floating-image-first>img {
+      display: none;
+  
+    }
+    .floating-image-second>img {
+      display: none;
+  
+    }
+     .floating-image-third>img {
+     display: none;
+  
+     }
 }
 @media only screen and (max-width: 750px) {
   .header-bottom-nav {
@@ -919,6 +1117,70 @@
     width: 45px;
     height: 45px;
     margin-top: 19px;
+  }
+  .youtube {
+    height: 640px;
+  }
+
+  .youtube-video {
+    height: 825px;
+  }
+  .season-product-description-top {
+    margin-right: 80px;
+  }
+  .ice-coffee-blend {
+    height: 220px;
+  }
+
+  .season-product > img {
+    height: 220px;
+  }
+
+  .season-product-description-top-first {
+    font-size: 10px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 15px;
+  }
+
+  .season-product-description-top {
+    margin-top: 72px;
+
+    margin-right: 50px;
+  }
+  .reserve-coffee-image > img {
+    width: 240px;
+    margin-left: 13%;
+  }
+
+  .reserve-cofee-description {
+    width: 320px;
+  }
+  .favorite-inner-container {
+    width: 400px;
+  }
+  .favorite-title {
+    font-size: 70px;
+  }
+  .favorite-second {
+    font-size: 32px;
+  }
+  .favorite-third {
+    font-size: 24px;
+  }
+  .favorite {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .season-product-description-top {
+    margin-right: 40px;
+  }
+  .season-product-description-container {
+    width: 370px;
+    margin-right: 2%;
+    margin-top: -2%;
   }
 }
 
@@ -939,17 +1201,215 @@
   .coffee-image {
     height: 550px;
   }
+  .image-slider-arrow-icons {
+    margin-top: -24%;
+  }
+  .slideshow-section {
+    height: 350px;
+  }
+  .youtube {
+    height: 570px;
+  }
+
+  .youtube-video {
+    height: 760px;
+  }
+  .season-product-description-top {
+    margin-right: 20px;
+  }
+  .reserve-coffee-image > img {
+    width: 230px;
+    margin-left: 8%;
+  }
+
+  .reserve-cofee-description {
+    width: 270px;
+  }
+  .reserve-coffee-description-container {
+    margin-top: 70px;
+  }
+  .find-store-last-image > img {
+    margin-left: 35vw;
+  }
+  .find-store-description {
+    margin-left: 280px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .ice-coffee-blend {
+    height: 180px;
+  }
+
+  .season-product > img {
+    height: 180px;
+  }
+
+  .season-product-description-top-first {
+    font-size: 10px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 15px;
+  }
+  .season-product-description-container {
+    width: 320px;
+    margin-top: -4%;
+  }
+  .season-product-description-container {
+    width: 270px;
+    margin-top: -8%;
+  }
+
+  .reserve-coffee-description-container {
+    margin-left: 2%;
+    margin-top: 32px;
+  }
+
+  .reserve-cofee-description {
+    width: 270px;
+  }
+
+  .reserve-coffee-image > img {
+    width: 150px;
+  }
+  .favorite-inner-container {
+    width: 300px;
+  }
+
+  .favorite-title {
+    font-size: 50px;
+  }
+
+  .favorite-second {
+    font-size: 24px;
+  }
+
+  .favorite-third {
+    font-size: 18px;
+  }
+
+  .favorite {
+    height: 500px;
+  }
+  .find-store-last-image > img {
+    width: 40vw;
+    margin-left: 42vw;
+  }
 }
 @media only screen and (max-width: 520px) {
   .coffee-image-container {
     transform: scale(0.5);
     margin-left: 90%;
   }
+  .dot-components {
+    margin-top: 160px;
+  }
+  .slideshow-section {
+    height: 280px;
+  }
+  .youtube {
+    height: 460px;
+  }
+
+  .youtube-video {
+    height: 500px;
+  }
+  .ice-coffee-blend {
+    height: 160px;
+  }
+
+  .season-product > img {
+    height: 160px;
+  }
+
+  .season-product-description-top-first {
+    font-size: 9px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 13px;
+  }
+  .favorite {
+    height: 300px;
+  }
+  .favorite-inner-container {
+    display: none;
+  }
+  .the-front > img {
+    width: 220px;
+  }
+  .the-back > img {
+    width: 220px;
+    height: unset;
+  }
+  .card-back-ground {
+    width: unset;
+    height: unset;
+  }
+  .reserve-store {
+    height: 600px;
+  }
+  .reseve-store-container {
+    height: 600px;
+  }
+  .find-store-first-image > img {
+    width: 150px;
+  }
+  .find-store-second-image > img {
+    width: 120px;
+  }
+  .find-store-description-first {
+    font-size: 16px;
+  }
+  .find-store-description-second {
+    font-size: 14px;
+  }
+  .find-store-description-third,
+  .find-store-description-forth,
+  .find-store-description-last {
+    font-size: 12px;
+  }
+  .find-store-description {
+    margin-left: 240px;
+  }
 }
 
 @media only screen and (max-width: 470px) {
   .silder-table {
     font-size: 12px;
+  }
+  .image-slider-arrow-icons {
+    margin-top: -26%;
+  }
+  .ice-coffee-blend {
+    height: 140px;
+  }
+  .season-product > img {
+    height: 140px;
+  }
+
+  .season-product-description-top-first {
+    font-size: 8px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 12px;
+  }
+
+  .season-product-description-top {
+    margin-top: 55px;
+  }
+  .coffee-image {
+    height: 500px;
+  }
+  .reserve-cofee-description {
+    width: 250px;
+  }
+
+  .reserve-coffee-image > img {
+    width: 130px;
+    /* margin-left: 8%; */
   }
 }
 
@@ -965,6 +1425,51 @@
   .coffee-image-container {
     transform: scale(0.4);
   }
+  .slideshow-section {
+    height: 250px;
+  }
+  .dot-components {
+    margin-top: 140px;
+  }
+  .ice-coffee-blend {
+    height: 120px;
+  }
+
+  .season-product > img {
+    height: 120px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 12px;
+  }
+
+  .season-product-description-top {
+    margin-top: 40px;
+    margin-right: 10px;
+  }
+  .season-product-description-bottom {
+    display: none;
+  }
+  .season-product-description-container {
+    margin-top: unset;
+    width:unset;
+    /* margin-right: -45px; */
+  }
+  .reserve-cofee-description {
+    display: none;
+  }
+  .find-store-first-image > img {
+    width: 110px;
+  }
+
+  .find-store-second-image > img {
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .find-store-description {
+    margin-left: 48vw;
+  }
 }
 @media only screen and (max-width: 360px) {
   .coffee-image-container {
@@ -973,21 +1478,135 @@
   .coffee-image {
     height: 450px;
   }
-     .silder-table {
-       font-size: 11px;
-     }
+  .silder-table {
+    font-size: 11px;
+  }
+  .image-slider-arrow-icons {
+    margin-top: -28%;
+  }
+  .slideshow-section {
+    height: 220px;
+  }
+  .dot-components {
+    margin-top: 120px;
+  }
+  .youtube {
+    height: 440px;
+  }
+
+  .youtube-video {
+    height: 440px;
+  }
+  .ice-coffee-blend {
+    height: 100px;
+  }
+
+  .season-product > img {
+    height: 100px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 12px;
+  }
+
+  .season-product-description-container {
+    /* margin-right: -55px; */
+  }
+  .the-front > img {
+    width: 190px;
+  }
+
+  .the-back > img {
+    width: 190px;
+    /* height: unset; */
+  }
+  .reserve-store {
+    height: 400px;
+  }
+  .reseve-store-container {
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 330px) {
   .header-bottom-nav {
     font-size: 7px;
   }
+  .ice-coffee-blend {
+    height: 90px;
+  }
+
+  .season-product > img {
+    height: 90px;
+  }
+
+  .season-product-description-top-second {
+    font-size: 11px;
+  }
+  .season-product-description-top-first {
+    font-size: 7px;
+  }
+  .season-product-description-container {
+    /* margin-right: -73px; */
+    margin-top: -2%;
+  }
+  .find-store-description-first {
+    font-size: 14px;
+  }
+
+  .find-store-description-second {
+    font-size: 12px;
+  }
+
+  .find-store-description-third,
+  .find-store-description-forth,
+  .find-store-description-last {
+    font-size: 10px;
+  }
 }
 @media only screen and (max-width: 300px) {
   .coffee-image-container {
     transform: scale(0.25);
   }
-     .silder-table {
-       font-size: 10px;
-     }
+  .silder-table {
+    font-size: 10px;
+  }
+  .youtube {
+    height: 410px;
+  }
+
+  .youtube-video {
+    height: 410px;
+  }
+  .season-product-description-top-first {
+    font-size: 6.5px;
+  }
+  .season-product-description-container {
+    width: 150px;
+    margin-right: unset;
+    margin-top: -13px;
+  }
+  .find-store {
+    height: 200px;
+  }
+  .find-store-first-image > img {
+    width: 90px;
+  }
+
+  .find-store-second-image > img {
+    width: 70px;
+  }
+  .find-store-description-first {
+    font-size: 12px;
+  }
+
+  .find-store-description-second {
+    font-size: 10px;
+  }
+
+  .find-store-description-third,
+  .find-store-description-forth,
+  .find-store-description-last {
+    font-size: 8px;
+  }
 }
