@@ -21,7 +21,6 @@
 }
 
 .header-container {
-  /* width: 1000px; */
   height: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -55,9 +54,6 @@
 }
 
 .header-bottom-nav {
-  /* width: 800px; */
-  /* height: 30px;
-  float: right; */
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
@@ -69,28 +65,24 @@
 .header-bottom-nav-coffee,
 .header-bottom-nav-menu,
 .header-bottom-nav-store {
-  /* width: 80px; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
 }
 
 .header-bottom-nav-responsibility {
-  /* width: 150px; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
 }
 
 .header-bottom-nav-my-starbucks-reward {
-  /* width: 220px; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
 }
 
 .header-bottom-nav-news {
-  /* width: 120px; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -135,8 +127,6 @@
 }
 
 .header-bottom-nav-coffee-container {
-  /* width: 1000px; */
-  /* margin: 0 auto; */
   margin-left: 10px;
   color: white;
   display: flex;
@@ -202,7 +192,6 @@
 }
 
 .header-bottom-nav-extend-container {
-  
   margin-left: 10px;
 }
 
@@ -662,7 +651,6 @@
   background-size: cover;
   height: 700px;
   position: relative;
-  
 }
 
 .reseve-store-container {
@@ -691,7 +679,7 @@
 
 .the-front {
   position: absolute;
-  
+
   height: 350px;
   backface-visibility: hidden;
   color: #333;
@@ -703,7 +691,6 @@
   width: 300px;
 }
 .the-back {
-  
   backface-visibility: hidden;
   color: #333;
   transition: transform 0.6s linear;
@@ -740,12 +727,9 @@
   height: 400px;
   background-image: url("../images/find_store_bg.jpg");
   position: relative;
-  /* min-width: 1370px; */
 }
 
 .find-store-container {
-  /* width: 1200px; */
-  /* height: 400px; */
   margin: 0 auto;
   position: relative;
 }
@@ -780,7 +764,6 @@
 }
 
 .find-store-description {
-  /* width: 700px; */
   height: 200px;
   margin-left: 450px;
   position: relative;
@@ -801,16 +784,13 @@
 /* award */
 
 .award {
-  /* width: 100%; */
   height: 200px;
   background-color: #272727;
   position: relative;
-  /* min-width: 1370px; */
 }
 
 .award-container {
   position: relative;
-  /* width: 1000px; */
   height: 200px;
   margin: 0 auto;
 }
@@ -880,9 +860,6 @@
   .youtube-video-container {
     margin-top: -175px;
   }
-  .find-store-container {
-    /* width: 1000px; */
-  }
 }
 @media only screen and (max-width: 1190px) {
   .youtube {
@@ -942,9 +919,7 @@
     width: 320px;
     margin-left: 13%;
   }
-  .find-store-container {
-    /* width: 900px; */
-  }
+
   .floating-image-third {
     margin-right: unset;
   }
@@ -1014,9 +989,7 @@
   .reserve-coffee-image > img {
     width: 330px;
   }
-  .find-store-container {
-    /* width: 800px; */
-  }
+
   .find-store-description {
     width: 40vw;
   }
@@ -1361,25 +1334,26 @@
   .find-store-description {
     margin-left: 240px;
   }
-    .header-bottom-nav-coffee-container>div {
-      margin-right: 30px;
-    }
-  
-    .header-bottom-nav-title {
-      font-size: 12px;
-    }
-  
-    .header-bottom-nav-contents>div {
-      font-size: 9px;
-    }
+  .header-bottom-nav-coffee-container > div {
+    margin-right: 30px;
+  }
+
+  .header-bottom-nav-title {
+    font-size: 12px;
+  }
+
+  .header-bottom-nav-contents > div {
+    font-size: 9px;
+  }
 }
 
 @media only screen and (max-width: 470px) {
-  .visual-spoon-image{
-    margin-top:250px;
+  .visual-spoon-image {
+    margin-top: 250px;
   }
-  .oatmeal-latte-image,.carabel-crumble-image{
-    margin-top:-50px;
+  .oatmeal-latte-image,
+  .carabel-crumble-image {
+    margin-top: -50px;
   }
   .silder-table {
     font-size: 12px;
@@ -1394,7 +1368,6 @@
     height: 140px;
   }
 
-  
   .season-product-description-top-first {
     font-size: 8px;
   }
@@ -1459,7 +1432,6 @@
   .season-product-description-container {
     margin-top: unset;
     width: unset;
-    /* margin-right: -45px; */
   }
   .reserve-cofee-description {
     display: none;
@@ -1476,17 +1448,17 @@
   .find-store-description {
     margin-left: 48vw;
   }
-    .header-bottom-nav-coffee-container>div {
-      margin-right: 20px;
-    }
-  
-    .header-bottom-nav-title {
-      font-size: 11px;
-    }
-  
-    .header-bottom-nav-contents>div {
-      font-size: 8px;
-    }
+  .header-bottom-nav-coffee-container > div {
+    margin-right: 20px;
+  }
+
+  .header-bottom-nav-title {
+    font-size: 11px;
+  }
+
+  .header-bottom-nav-contents > div {
+    font-size: 8px;
+  }
 }
 @media only screen and (max-width: 360px) {
   .coffee-image-container {
@@ -1495,14 +1467,14 @@
   .coffee-image {
     height: 250px;
   }
-    .visual-spoon-image {
-      margin-top: 50px;
-    }
-  
-    .oatmeal-latte-image,
-    .carabel-crumble-image {
-      margin-top: -250px;
-    }
+  .visual-spoon-image {
+    margin-top: 50px;
+  }
+
+  .oatmeal-latte-image,
+  .carabel-crumble-image {
+    margin-top: -250px;
+  }
   .silder-table {
     font-size: 11px;
   }
@@ -1534,16 +1506,12 @@
     font-size: 12px;
   }
 
-  .season-product-description-container {
-    /* margin-right: -55px; */
-  }
   .the-front > img {
     width: 190px;
   }
 
   .the-back > img {
     width: 190px;
-    /* height: unset; */
   }
   .reserve-store {
     height: 400px;
@@ -1572,7 +1540,6 @@
     font-size: 7px;
   }
   .season-product-description-container {
-    
     margin-top: -2%;
   }
   .find-store-description-first {
@@ -1588,29 +1555,29 @@
   .find-store-description-last {
     font-size: 10px;
   }
-    .header-bottom-nav-coffee-container>div {
-      margin-right: 10px;
-    }
-  
-    .header-bottom-nav-title {
-      font-size: 9px;
-    }
-  
-    .header-bottom-nav-contents>div {
-      font-size: 7px;
-    }
-        .reserve-coffee-image{
-          width:unset;
-        }
-                .reserve-coffee-image>img{
-                  width:100px;
-                  margin-left:-18%;
-                }
+  .header-bottom-nav-coffee-container > div {
+    margin-right: 10px;
+  }
+
+  .header-bottom-nav-title {
+    font-size: 9px;
+  }
+
+  .header-bottom-nav-contents > div {
+    font-size: 7px;
+  }
+  .reserve-coffee-image {
+    width: unset;
+  }
+  .reserve-coffee-image > img {
+    width: 100px;
+    margin-left: -18%;
+  }
 }
 @media only screen and (max-width: 300px) {
   .header-bottom-nav {
-      font-size: 5.5px;
-    }
+    font-size: 5.5px;
+  }
   .coffee-image-container {
     transform: scale(0.25);
   }
@@ -1655,7 +1622,7 @@
   .find-store-description-last {
     font-size: 8px;
   }
-    .find-store-description{
-      height:unset;
-    }
+  .find-store-description {
+    height: unset;
+  }
 }
